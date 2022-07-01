@@ -1,8 +1,8 @@
 require("@nomiclabs/hardhat-waffle");
 
 module.exports = {
-  solidity: "0.8.4",
-  network: {
+  solidity: '0.8.2',
+    networks: {
     rinkeby: {
       url: 'https://eth-rinkeby.alchemyapi.io/v2/ipvpLumtDKVgUmHvn20K2ZJIIlMOVIov',
       accounts: [

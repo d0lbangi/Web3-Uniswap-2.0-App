@@ -1,10 +1,11 @@
 const main = async () => {
-  const transactionFactory = await hre.ethers.getContractFactory('Transactions')
+  const transactionFactory = await hre.ethers.getContractFactory('Transactions', )
   const transactionContract = await transactionFactory.deploy()
 
   await transactionContract.deployed()
 
-  console.log('Transactions deployed to:', transactionContract.address)
+  console.log('Transactions deployed to:', transactionContract.address) 
+  // Returning the contract address on the rinkeby
 }
 
 ;(async () => {
@@ -15,4 +16,4 @@ const main = async () => {
     console.error(error)
     process.exit(1)
   }
-})()
+})() // Calling the function to deploy the contract 
